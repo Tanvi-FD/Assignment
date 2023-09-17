@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.section-wrapper {
+    position: relative;
+    margin: 30px;
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../IMG/black.jpg) no-repeat center/cover;
+
+}
+
+.center-part {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+}
+
+.center-part p {
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+h5 {
+    width: 50%;
+    color: #e74c3c;
+    display: inline-block;
+    position: relative;
+}
+
+h5::after {
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    left: 0;
+    height: 2px;
+    content: "";
+    display: block;
+    background-color: antiquewhite;
+}
+
+h5::before {
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    right: 0;
+    height: 2px;
+    content: "";
+    display: block;
+    background-color: antiquewhite;
+}
+
+.wave-img img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.line {
+top: 100px;
+}
+
+.photo {
+    width: 50px;
+    position: absolute;
+    height: 50px;
+}
+
+.photo img {
+    border-radius: 50%;
+    border: 3px solid #e74c3c;
+    width: 100%;
+}
+
+.photo-2 img {
+    box-shadow: 0 0 5px 5px black;
+}
+
+.photo-1 {
+    bottom: 160px;
+    left: 200px;
+}
+
+.photo-2 {
+    bottom: 220px;
+    left: 480px;
+    width: 60px;
+    height: 60px;
+}
+
+.photo-3 {
+    bottom: 230px;
+    right: 700px;
+}
+
+.photo-4 {
+    bottom: 200px;
+    right: 450px;
+}
+
+.photo-5 {
+    bottom: 275px;
+    right: 200px;
+}
+
+.ui {
+    position: absolute;
+    bottom: 100px;
+    left: 445px;
+}
+
+.ui h4 {
+    position: relative;
+    color: #e74c3c;
+}
+
+.ui h4::after {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    height: 50px;
+    background-color: aliceblue;
+    width: 1px;
+}
+
+.ui p {
+    margin: 10px 0;
+    color: aliceblue;
+}

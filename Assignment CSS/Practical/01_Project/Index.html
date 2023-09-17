@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-01</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color:orange;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: 200px;
+        width: 80%;
+        margin: 50px auto;
+        gap: 8px;
+        border: 5px solid black;
+        box-shadow: 0px 5px 100px rgb(7, 7, 7);
+    
+    }
+    .box-1 img {
+        object-fit: cover;
+        height: 200px;
+        width: 100%;
+        
+    }
+    .space-1{
+        grid-column: span 3;
+    }
+    .space-2{
+        grid-column: span 2;
+    }
+    .long-space{
+        grid-column: 5;
+       grid-row: 1/5;
+       background-color: rgb(6, 6, 6);
+    }
+    ul li{
+        list-style: none;
+        margin: 10px 0;
+       
+    }
+    ul li a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        
+    }
+    ul li a:hover{
+        color: orange;
+        transition: 0.9s;
+        transform: scale(1.5);
+    
+        
+    }
+    nav{
+        text-align: end;
+        padding: 10px 20px;
+    }
+    .nav-1 h1{
+        font-size: 25px;
+        color: white;
+        margin: 60px 0 0 0;
+    }
+    ul{
+        margin-top: 30px;
+    }
+.icon i{
+    color: white;
+    font-size: 25px;
+    margin-top: 30px;
+    padding: 0 10px 0 10px;
+}
+.icon i:hover{
+    color: orange;
+    font-size: 25px;
+    transition: 0.9s;
+    transform: scale(1.5);
+    margin-top: 30px;
+    padding: 0 10px 0 10px;
+}
+@media (max-width: 575.98px) { 
+    .long-space{
+        grid-column: 1/6;
+       grid-row: 1;
+       background-color: rgb(6, 6, 6);
+       grid-auto-rows: 50px;
+    }  
+    .nav-1 h1{
+        text-align: center;
+        margin-top: 5px;
+    }
+    nav ul, .icon{
+        display: flex;
+        justify-content: space-around;
+    }
+
+ }
+
+@media (max-width: 991.98px) { 
+    .long-space{
+        grid-column: 1/6;
+       grid-row: 1;
+       background-color: rgb(6, 6, 6);
+       grid-auto-rows: 50px;
+    }
+    .nav-1 h1{
+        text-align: center;
+        margin-top: 5px;
+    }
+    nav ul, .icon{
+        display: flex;
+        justify-content: space-around;
+    }
+   .main{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 200px;
+        gap: 1px;
+   } 
+   .space-1{
+        grid-column: span 2;
+    }
+    .long{
+        grid-row: 5;
+        grid-column: 1/5;
+    }
+    .box-1 img {
+        object-fit: cover;
+        height: 200px;
+        width: 100%;
+        
+    }
+ }
+
+
+</style>
+<body>
+    <div class="main">
+        <div class="box-1 space-1"><img src="./IMG/ganpati02.jpg" alt="#"></div>
+        <div class="box-1"><img src="./IMG/ganpati01.jpg" alt="#"></div>
+        <div class="box-1"><img src="./IMG/ganpati03.jpg" alt="#"></div>
+        <div class="box-1 space-2"><img src="./IMG/ganpati05.jpg" alt="#"></div>
+        <div class="box-1"><img src="./IMG/ganpati04.jpg" alt="#"></div>
+        <div class="box-1 space-2"><img src="./IMG/ganpati06.jpg" alt="#"></div>
+        <div class="box-1 space-2"><img src="./IMG/ganpati07.jpg"alt="#"></div>
+        <div class="box-1"><img src="./IMG/flower3.jpeg" alt="#"></div>
+        <div class="box-1 space-2"><img src="./IMG/flower7.jpeg" alt="#"></div>
+        <div class="box-1 long"><img src="./IMG/flower2.jpg" alt="#"></div>
+        <div class="box-1 long-space">
+            <nav>
+                <div class="nav-1">
+                    <h1>Shutter</h1>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Photo</a></li>
+                    <li><a href="#">Bio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Content</a></li>
+                </ul>
+                <div class="icon">
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                    <span><i class="fa-brands fa-instagram"></i></span>
+                    <span><i class="fa-brands fa-facebook-f"></i></span>
+                </div>
+            </nav>
+        </div>
+       
+    </div>
+</body>
+</html>
