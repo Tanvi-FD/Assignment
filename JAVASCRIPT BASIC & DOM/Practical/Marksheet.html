@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marksheet</title>
+  </head>
+  <style>
+    .mark-calculator-container {
+      text-align: center;
+      border: 2px solid black;
+      width: 550px;
+      margin: 0 auto;
+    }
+    p {
+      text-align: center;
+    }
+    .sub-container {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 20px;
+    }
+    .sub-container input{
+        margin: 10px;
+    }
+    #total {
+      color: blue;
+    }
+    #percentage {
+      color: blue;
+    }
+    label{
+      padding-left: 40px;
+    }
+  </style>
+  <script>
+    function calculate() {
+      const a = parseInt(document.getElementById("sub-1").value);
+      const b = parseInt(document.getElementById("sub-2").value);
+      const c = parseInt(document.getElementById("sub-3").value);
+      const d = parseInt(document.getElementById("sub-4").value);
+      const e = parseInt(document.getElementById("sub-5").value);
+      const f = parseInt(document.getElementById("sub-6").value);
+      const g = parseInt(document.getElementById("sub-7").value);
+
+     
+      if (
+        a < 0 || a > 100 || b > 100 || c > 100 || d > 100 || e > 100 || f > 100 || g > 100) {
+        alert("Please enter correct value.");
+      }
+
+     
+      const total = a + b + c + d + e + f + g;
+      document.getElementById("total").innerText = total;
+
+     
+      const percentage = (total * 100) / 700;
+      document.getElementById("percentage").innerText = percentage;
+    }
+  </script>
+  <body>
+    <div class="mark-calculator-container">
+      <h1>Marksheet for Information Technology</h1>
+      <p>Enter Marks</p>
+      <div id="input-container">
+        <div class="sub-container">
+          <label>1. C Language</label>
+          <input id="sub-1" type="text" />
+        </div>
+        <div class="sub-container">
+          <label>2. C++ Language</label>
+          <input id="sub-2" type="text" />
+        </div>
+        <div class="sub-container">
+          <label>3. Database</label>
+          <input id="sub-3" type="text" />
+        </div>
+        <div class="sub-container">
+          <label>4. HTML</label>
+          <input id="sub-4" type="text" />
+        </div>
+        <div class="sub-container">
+          <label>5. CSS</label>
+          <input id="sub-5" type="text" />
+        </div>
+        <div class="sub-container">
+          <label>6. Php</label>
+          <input id="sub-6" type="text" />
+        </div>
+        <div class="sub-container">
+          <label>7. Core java</label>
+          <input id="sub-7" type="text" />
+        </div>
+        <br />
+        <button class="btn" onclick="calculate()">Result</button><br /><br />
+        <label>Total is : <span id="total"></span>/700</label>
+        <label>Percentage is : <span id="percentage"></span>&percnt;</label>
+        <br><br>
+      </div>
+    </div>
+  </body>
+</html>

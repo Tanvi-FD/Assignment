@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment</title>
+</head>
+<body>
+    <h1>Assigment JAVASCRIPT BASIC & DOM</h1>
+    <b>&bigstar;What is JavaScript?</b>
+
+    <p>&roarr;JavaScript is a high-level programming language primarily used for building dynamic and interactive web pages.
+    <br><br> &roarr; It enables client-side scripting to interact with the user, control the browser, and modify the content dynamically.
+    <br><br> &roarr;JavaScript is also commonly used in server-side development (Node.js) and for creating various types of applications beyond web development.</p><hr><hr>
+
+    <b>&bigstar;What is the use of isNaN function?</b>
+
+    <p>&roarr;The isNaN function in JavaScript is used to check whether a given value is NaN (Not a Number). 
+        <br><br>&roarr; It returns a Boolean value, true if the value is NaN, and false if it's a valid number or can be converted to one.
+        <br><br>&roarr;It's commonly used to validate numeric input or check if a value is a valid number before performing calculations.
+        <br><br>&roarr; However, be cautious, as isNaN has some quirks, and Number.isNaN is often recommended for more reliable NaN checking.
+    </p><hr><hr>
+
+    <b>&bigstar;What is negative Infinity?</b>
+
+    <p>&roarr;Negative Infinity in JavaScript represents the mathematical concept of an infinitely small negative value.
+       <br><br> &roarr; It is a special value that is smaller than any other number, including negative numbers. 
+        <br><br>&roarr;In JavaScript, you can use Number.NEGATIVE_INFINITY to represent negative infinity.
+        <br><br>&roarr; This value is often encountered in calculations where a result is unbounded in the negative direction.</p><hr><hr>
+
+    <b>&bigstar;Which company developed JavaScript?</b> 
+    
+    <p>&roarr;JavaScript was developed by Netscape Communications Corporation. 
+        <br><br>&roarr;It was originally created by Brendan Eich in 1995 while he was working at Netscape. 
+        <br><br>&roarr;JavaScript was initially named "Mocha" and later "LiveScript" before finally being named JavaScript.</p><hr><hr>
+
+    <b>&bigstar;What are undeclared and undefined variables?</b>  
+    
+    <p>&roarr; Undeclared variables are those that have not been declared or defined in
+        the current scope, while undefined variables are those that have been
+        declared but not given a value.</p><hr><hr>
+
+    <b>&bigstar;Write the code for adding new elements dynamically?</b>
+    
+    <p>&roarr;Creation of new element: New elements can be created in JS by using the
+        createElement() method.
+        &roarr; <strong>Syntax:</strong><br>
+        &roarr;  document.createElement("< tagName >"); <br>  
+            // Where < tagName > can be any HTML <br>
+            // tagName like div, ul, button, etc.<br>
+            // newDiv element has been created <br>
+            &roarr; For Eg: let newDiv = document.createElement("div");<br></p><hr><hr>
+
+    <b>&bigstar;What is the difference between ViewState and SessionState?</b>
+
+    <p>&roarr; <strong>ViewState:</strong> It is maintained at only one level that is page-level. Changes made on a single page is not visible on other pages. <br>
+        Information that is gathered in view state is stored for the clients only and cannot be transferred to any other place. </p>
+        &roarr;<strong>SessionState:</strong>It is maintained at session-level and data can be accessed across all pages in the web application.<br>The information is stored within the server and can be accessed by any person that has access to the server where the information is stored.</p><hr><hr>
+
+        <b>&bigstar;What is === operator?</b>
+
+        <p>&roarr;The strict equality (===) operator checks whether its two operands are equal, returning a Boolean result.</p><hr><hr>
+
+        <b>&bigstar;How can the style/class of an element be changed?</b>
+
+        <p>&roarr; We will learn how we can change the style/class of an element. <br>
+            &roarr;If you want to build a cool website or app then UI plays an important role. We can change, add or remove any CSS property from an HTML element on the occurrence of any event with the help of JavaScript.</p><hr><hr>
+        
+        <b>&bigstar;How to read and write a file using JavaScript?</b>    
+
+        <p>&roarr;Files can be read and written by using java script functions – fopen(),fread() and fwrite(). <br>
+            &roarr;The function fopen() takes two parameters – 1. Path and 2. Mode (0 for reading and 3 for writing).
+            The fopen() function returns -1, if the file is successfully opened</p><hr><hr>
+
+        <b>&bigstar;What are all the looping structures in JavaScript?</b>
+
+        <p>&roarr;JavaScript supports different kinds of loops: <br>
+
+           &roarr;for - loops through a block of code a number of times <br>
+           &roarr;for/in - loops through the properties of an object <br>
+           &roarr;for/of - loops through the values of an iterable object <br>
+           &roarr;while - loops through a block of code while a specified condition is true <br>
+           &roarr;do/while - also loops through a block of code while a specified condition is true <br>
+        </p><hr><hr>
+
+        <b>&bigstar;How can you convert the string of any base to an integer in JavaScript?</b>
+
+        <p>&roarr;In JavaScript parseInt() function (or a method) is used to convert the passed-in string parameter or value to an integer value itself. <br>
+            &roarr; This function returns an integer of the base which is specified in the second argument of the parseInt() function.</p><hr><hr>
+
+        <b>&bigstar;What is the function of the delete operator?</b>  
+        
+        <p>&roarr;The delete operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically.</p><hr><hr>
+
+        <b>&bigstar;What are all the types of Pop up boxes available in JavaScript?</b>
+
+        <p>&roarr;JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box.</p><hr><hr>
+
+        <b>&bigstar;What is the use of Void (0)?</b>
+
+        <p>&roarr;JavaScript void 0 means returning undefined (void) as a primitive value. <br>
+            &roarr;You might come across the term “JavaScript:void(0)” while going through HTML documents.</p><hr><hr>
+
+        <b>&bigstar;How can a page be forced to load another page in JavaScript?</b>   
+        
+        <p>&roarr;We can use window. location property inside the script tag to forcefully load another page in Javascript.</p>
+
+        <b>&bigstar;What are the disadvantages of using innerHTML in JavaScript?</b>
+
+        <p>&roarr; <u>Disadvantages of innerHTML</u> <br>
+            <li>Event handlers attached to any DOM element are preserved.</li>
+            <li>Replacement is done everywhere.</li>
+            <li>It is not possible to append innerHTML.</li>
+            <li>Breaks the document.</li>
+            <li>Used for Cross-site Scripting.</li>
+        </p><hr><hr>
+
+</body>
+</html>
