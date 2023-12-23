@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery assignment</title>
+    <!-- google font link here  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            text-transform: capitalize;
+        }
+
+        h1 {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .css-assigment {
+            width: 90%;
+            background-image: linear-gradient(150deg, #ddd6f3, #faaca8);
+            margin: 10px auto;
+            border: 1px solid black;
+            box-shadow: 0 0 10px 2px gray;
+            padding: 20px;
+        }
+
+        .question {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 50px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> JQuery Basic, Effects & Advanced ASSIGNMENT</h1>
+    <main>
+        <section class="css-assigment">
+            <p class="question"> Que-1. What is jQuery?</p>
+            <ul>
+                <li>
+                    <p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as
+                        well as event handling, CSS animation, and Ajax. It is free, open-source software using the
+                        permissive MIT License. </p>
+                </li>
+            </ul>
+            <hr>
+            <p class="question"> Que-2. How to Apply CSS Using JQuery, How to Add Class and Remove Class in
+                Jquery, JQuery Animation?</p>
+            <ol>
+                <li>
+                    <p>we can use css() method to apple css in Jquery <br>
+                        [ex- $("p").css("background-color", "yellow")]
+                    </p>
+                </li>
+                <li>
+                    <p>we can use addClass()method to add class in jquery <br>
+                        [ex- $("button").click(function(){ <br>
+                        $("p:first").addClass("intro");<br>
+                        });]
+                    </p>
+                </li>
+                <li>
+                    <p>we can use removeClass()method to remove class in jquery <br>
+                        [ex- $("button").click(function(){ <br>
+                        $("p:first").removeClass("intro");<br>
+                        });]
+                    </p>
+                </li>
+                <li>
+                    <p>The jQuery animate() method is used to create custom animations.<br>
+                        [ex - $("button").click(function(){ <br>
+                        $("div").animate({left: '250px'}); <br>
+                        }); ]
+                    </p>
+                </li>
+            </ol>
+            <hr>
+            <p class="question"> Que-3. How to create slider with animation?</p>
+            <ol>
+                <li>
+                    <p>
+                        we can use "jQuery Sliding Methods" to Create slider in jquery
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        jQuery slideDown() <br>
+                        Demonstrates the jQuery slideDown() method.
+
+
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        jQuery slideUp() <br>
+                        Demonstrates the jQuery slideUp() method.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        jQuery slideToggle() <br>
+                        Demonstrates the jQuery slideToggle() method.
+                    </p>
+                </li>
+            </ol>
+            <hr>
+        </section>
+    </main>
+</body>
+
+
+
+
+</html>
