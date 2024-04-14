@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT BASIC & DOM ASSIGNMENT</title>
+    <!-- google font link here  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            text-transform: capitalize;
+        }
+
+        h1 {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .css-assigment {
+            width: 90%;
+            background-image: linear-gradient(150deg, #ddd6f3, #faaca8);
+            margin: 10px auto;
+            border: 1px solid black;
+            box-shadow: 0 0 10px 2px gray;
+            padding: 20px;
+        }
+
+        .question {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 50px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>JAVASCRIPT BASIC & DOM ASSIGNMENT</h1>
+    <main>
+        <section class="css-assigment">
+            <p>
+                que.01 What is JavaScript. How to use it? 
+              </p>
+            <ul>
+                <li>JavaScript was invented by Brendan Eich in 1995. It was developed for NETSCAPE NAVIGATOR.</li>
+                <li>JavaScript is the very important programming language. We use Java Script to create websites. No website can be created in this world without Java Script.</li>
+                <li>JavaScript can dynamically modified our HTML decument.</li>
+                <li>JavaScript is the case sensitive language.</li>
+                <li>JavaScript is the client-side, server-side, event-based, object-oriented, interpreted programming language.</li>
+                <li>JavaScript is supported by every browser infact every browser is created with the help of JavaScript. JavaScript runs inside the every browser.</li>
+            </ul> <hr>
+            <p class="question">
+                que.02 How many type of Variable in JavaScript?
+            </p>
+            <ol>
+                <h4>we have a three diffrent types of varriable</h4>
+                <li>var .</li>
+                <li>let .</li>
+                <li>const .</li>
+            </ol> <hr>
+            <p class="question">
+                que.03  Define a Data Types in js?
+            </p>
+            <h4>we have a two deta types in javascprit</h4>
+            <ul>
+                <li>Primative data types
+                    <ol>
+                        <li>number</li>
+                        <li>string</li>
+                        <li>null</li>
+                        <li>undefined</li>
+                        <li>booloens</li>
+                        <li>bigint</li>
+                        <li>symbol</li>
+                    </ol>
+                </li>
+            </ul>
+            <ul>
+                <li>non-Primative data types
+                    <ol>
+                        <li>arrey</li>
+                        <li>object</li>
+                    </ol>
+                </li>
+            </ul><hr>
+            <p class="question">
+                que.04 Write a mul Function Which will Work Properly When invoked With Following Syntax.
+            </p>
+            <hr><hr>
+            <p class="question">
+                que.05 What the deference between undefined and undeclare in JavaScript?
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        undeclared : It occurs when we try to access any variable that is not initialized or declared
+                        earlier using the var, const or let keyword.
+                    </p>
+                </li>
+                <li>
+                    <p>Undefined: It occurs when a variable has been declared but has not been assigned any value.
+                        Undefined is not a keyword. </p>
+                </li>
+            </ul><hr>
+             <p class="question">
+                    que.06 Using console.log() print out the following statement: The quote 'There is no exercise better for
+                    the
+                    heart than reaching down and lifting people up.' by John Holmes teaches us to help one another. Using
+                    console.log() print out the following quote by Mother Teresa:
+                </p>
+                <script>
+                let text = " : The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another. ";
+                console.log(text);
+    
+                </script><hr>
+    
+                <p class="question"> que.07. Check if typeof '10' is exactly equal to 10. If not make it exactly equal?</p>
+                <ul>
+                    <li>console.log(`type of num1 is : ${typeof Number(num1)} and type of num1 is :${typeof num2}`)</li>
+                </ul><hr>
+                <p class="question">que.08. Write a JavaScript Program to find the area of a triangle?</p>
+                <script>
+                    let a = 8; 
+                    let b = 3;
+                    let c = 9;
+                    let s = (a + b + c) / 2;
+                    let area = (Math.sqrt(s * (s - a) * (s - b) * (s - c)));
+                    console.log(area);
+                </script><hr>
+                <p class="question">
+                    que.09 Write a JavaScript program to calculate days left until next Christmas? 
+                </p>
+                <script>
+                    let today = new Date(); 
+                        let Year = today.getFullYear(); 
+                        if (today.getMonth() == 11 && today.getDay() > 25) { 
+                        Year += 1;
+                        } 
+                        let CristmasDay = new Date(Year,11,25); 
+                        let reminingDays = (CristmasDay.getTime()-today.getTime())/(1000*60*60*24) 
+                        console.log(Math.ceil(reminingDays));
+                </script>
+                <hr>
+                <p class="question">
+                    que.10 What is Condition Statement? 
+                </p>
+                <ul>
+                    <li>Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run. There are multiple different types of conditionals in JavaScript including: “If” statements: where if a condition is true it is used to specify execution for a block of code.</li>
+    
+                </ul><hr>
+                <p class="question">
+                    Que.11  Find circumference of Rectangle formula : C = 4 * a ? 
+                </p>
+                
+                <script>
+                    let texta = (a)=>{ 
+                        return 4 * a; 
+                        } 
+                        a =" represents the length of one side of the rectangle." 
+                        let sideLength = 5;
+                        console.log(texta(5));
+                </script>
+                <hr>
+                <p class="question">
+                    Que.12 WAP to convert years into days and days into years? 
+                </p>
+    
+                <p class="question">
+                    que.13 Convert temperature Fahrenheit to Celsius? (Conditional logic Question)
+                </p>
+                <div class="Fahrenheit-box">
+                    <input type="number" placeholder="Fahrenheit Value" id="Fahrenheit">
+                    <button onclick="convertCelsius()">to Convert</button>
+                    <input type="number" placeholder="Celsius Value" disabled id="Celsius">
+                </div>
+                <hr>
+                <p class="question">que.15 What is the result of the expression (5 > 3 && 2 < 4)?</p>
+                <ul>
+                    <li>Result is : true ;</li>
+                </ul>
+                <script>
+                    console.log((5 > 3 && 2 < 4));
+                </script><hr>
+                <p class="question">
+                    que.16 What is the result of the expression (true && 1 && "hello")?
+                </p>
+                <ul>
+                    <li>Result is : hello;</li>
+                </ul>
+                <script>
+                    console.log((true && 1 && "hello"))
+                </script><hr>
+                <p class="question">
+                    que.17 What is the result of the expression true && false || false && true?
+                </p>
+                <ul>
+                    <li>Result is : False;</li>
+                </ul>
+                <script>
+                     console.log((true && false || false && true))
+                </script><hr>
+               <p class="question">
+                 que.18 What is a Loop and Switch Case in JavaScript define that ?
+               </p>
+               <ul>
+                <li>Loop: Loops are used in JavaScript to perform repeated tasks based on a condition.
+                    Conditions typically return true or false . A loop will continue running until the defined
+                    condition returns false .</li>
+                <li>Switch case: The switch statement executes a block of code depending on different cases. The
+                    switch statement is a part of JavaScript's "Conditional" Statements, which are used to
+                    perform different actions based on different conditions. Use switch to select one of many
+                    blocks of code to be executed.</li>
+            </ul><hr>
+            <p class="question">
+                que.19 What is the use of is Nan function? 
+            </p>
+            <ul>
+                <li>NaN stands for "Not a Number" and is a value in JavaScript used to represent an undefined or
+                    unrepresentable value. NaN is the result of an operation that was supposed to return a
+                    number, but couldn't because of an error or undefined/empty value.</li>
+            </ul><hr>
+            <p class="question">
+                que.20 What is the difference between && and || in JavaScript?
+            </p>
+            <ul>
+                <li>|| means “or”. It evaluates to true if the expression on either side is truthy. && means
+                    “and”. It evaluates to false if the expression on either side is falsy.</li>
+            </ul><hr>
+            <p class="question">
+                que.21 What is the use of Void (0)?
+            </p>
+            <ul>
+                <li>JavaScript void 0 means returning undefined (void) as a primitive value. </li>
+                  <li>You might come across the term “JavaScript:void(0)” while going through HTML documents.</li> 
+            </ul><hr>
+            <p class="question">
+                que.22 Check Number Is Positive or Negative in JavaScript? 
+            </p>
+            <script>
+                let number = 1; 
+                    if (number > 0) { 
+    
+                    console.log("This is a positive value") 
+    
+                    } 
+                    else if (number == 0) { 
+    
+                    console.log("this is a zero") 
+    
+                    } 
+                    else if (number < 0) { 
+    
+                        console.log("this is a negative value") 
+    
+                    }
+            </script><hr>
+            <p class="question">
+                que.23 Find the Character Is Vowel or Not ? 
+            </p>
+            <script>
+                let checkVowel = (ch) => { 
+                                let char = ch.toLowerCase(); 
+                                let check = ["a", "e", "i", "o", "u"] 
+                                if (check.includes(char)) { 
+                                console.log("This is a vowel") 
+                                } else { 
+                                console.log("this is a not vowel") 
+                                } 
+                                } 
+                            // checkVowel("E"); 
+                             checkVowel("d");
+            </script><hr>
+            <p class="question">
+                que.24 Write to check whether a number is negative, positive or zero? 
+            </p>
+            <p class="question">
+                que.25 Write to find number is even or odd using ternary operator in JS? 
+            </p>
+            <script>
+                 let CheckNumber =(num)=>{ 
+                                let oddEven = num%2==0?"this is even number":"this is a odd number" 
+                                console.log(oddEven) 
+                                } 
+                                // CheckNumber(5); 
+                                CheckNumber(2);
+            </script><hr>
+            <p class="question">que.26 Write find maximum number among 3 numbers using ternary operator in JS?
+            </p>
+            
+            <script>
+                let maximumCheck=()=>{ 
+                    let a = 20; 
+                    let b = 80; 
+                    let c = 40; 
+                    let check = a>b&&a>c?a:b>c?b:c; 
+                    return check; 
+                    }
+                    console.log(maximumCheck())
+            </script><hr>
+            <p class="question">que.27 Write find minimum number among 3 numbers using ternary operator in JS?</p>
+                        <script>
+                            let minimumCheck = () => { 
+                                let a = 10; 
+                                let b = 5; 
+                                let c = 20; 
+                                let check = a<b&&a<c?a:b<c?b:c; 
+                                    return check; 
+                                    } 
+                                    console.log(minimumCheck()) 
+                        </script>
+           
+         
+        </section>
+    </main>
+</body>
+</html>
