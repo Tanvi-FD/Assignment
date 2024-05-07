@@ -94,6 +94,14 @@
             <p class="question">
                 que.04 Write a mul Function Which will Work Properly When invoked With Following Syntax.
             </p>
+            <script>
+
+                function mul( a , b ){
+
+                    console.log(a * b);
+                }
+                    mul(9, 9);
+            </script>
             <hr><hr>
             <p class="question">
                 que.05 What the deference between undefined and undeclare in JavaScript?
@@ -172,7 +180,43 @@
                 <p class="question">
                     Que.12 WAP to convert years into days and days into years? 
                 </p>
-    
+                  <script>
+                    
+                    const daysInAYear = 365;
+
+                function yearsToDays(years) {
+                        
+                    return years * daysInAYear;
+
+                }
+
+
+                function daysToYears(days) {
+
+                    return days / daysInAYear;
+                }
+
+            const choice = prompt("Enter 1 to convert years to days or 2 to convert days to years:");
+
+
+                if (choice === '1') {
+
+                    const years = parseFloat(prompt("Enter the number of years:"));
+
+                     console.log(`${years} years is equal to ${yearsToDays(years)} days.`);
+                } 
+
+                else if (choice === '2') {
+
+                    const days = parseFloat(prompt("Enter the number of days:"));
+
+                    console.log(`${days} days is equal to ${daysToYears(days).toFixed(2)} years.`);
+                } 
+                else {
+                    console.log("Invalid choice. Please enter 1 or 2.");
+                }
+
+                  </script>
                 <p class="question">
                     que.13 Convert temperature Fahrenheit to Celsius? (Conditional logic Question)
                 </p>
@@ -281,6 +325,26 @@
             <p class="question">
                 que.24 Write to check whether a number is negative, positive or zero? 
             </p>
+            <script>
+            function checkNumber(number) {
+                if (number > 0) {
+                    return "The number is positive.";
+                } 
+                 else if (number < 0) {
+                    return "The number is negative.";
+                } 
+                else {
+                    return "The number is zero.";
+                }
+            }
+
+            // Example usage
+
+                const num = -5; // Change this to test with different numbers
+                const result = checkNumber(number);
+                console.log(result);
+
+            </script>
             <p class="question">
                 que.25 Write to find number is even or odd using ternary operator in JS? 
             </p>
