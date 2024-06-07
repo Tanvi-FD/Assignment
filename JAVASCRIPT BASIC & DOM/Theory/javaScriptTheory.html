@@ -94,14 +94,13 @@
             <p class="question">
                 que.04 Write a mul Function Which will Work Properly When invoked With Following Syntax.
             </p>
-            <script>
-
+            <pre>
                 function mul( a , b ){
 
                     console.log(a * b);
                 }
-                    mul(9, 9);
-            </script>
+                    mul(9,9);
+            </pre>
             <hr><hr>
             <p class="question">
                 que.05 What the deference between undefined and undeclare in JavaScript?
@@ -124,29 +123,29 @@
                     heart than reaching down and lifting people up.' by John Holmes teaches us to help one another. Using
                     console.log() print out the following quote by Mother Teresa:
                 </p>
-                <script>
-                let text = " : The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another. ";
+                <pre>
+                    let text = " : The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another. ";
                 console.log(text);
     
-                </script><hr>
-    
+                </pre><hr>
+
                 <p class="question"> que.07. Check if typeof '10' is exactly equal to 10. If not make it exactly equal?</p>
                 <ul>
                     <li>console.log(`type of num1 is : ${typeof Number(num1)} and type of num1 is :${typeof num2}`)</li>
                 </ul><hr>
                 <p class="question">que.08. Write a JavaScript Program to find the area of a triangle?</p>
-                <script>
+                <pre>
                     let a = 8; 
                     let b = 3;
                     let c = 9;
                     let s = (a + b + c) / 2;
                     let area = (Math.sqrt(s * (s - a) * (s - b) * (s - c)));
                     console.log(area);
-                </script><hr>
+                </pre><hr>
                 <p class="question">
                     que.09 Write a JavaScript program to calculate days left until next Christmas? 
                 </p>
-                <script>
+                <pre>
                     let today = new Date(); 
                         let Year = today.getFullYear(); 
                         if (today.getMonth() == 11 && today.getDay() > 25) { 
@@ -154,8 +153,8 @@
                         } 
                         let CristmasDay = new Date(Year,11,25); 
                         let reminingDays = (CristmasDay.getTime()-today.getTime())/(1000*60*60*24) 
-                        console.log(Math.ceil(reminingDays));
-                </script>
+                        console.log(Math.ceil(reminingDays)); 
+                </pre>
                 <hr>
                 <p class="question">
                     que.10 What is Condition Statement? 
@@ -167,56 +166,53 @@
                 <p class="question">
                     Que.11  Find circumference of Rectangle formula : C = 4 * a ? 
                 </p>
-                
-                <script>
+                <pre>
                     let texta = (a)=>{ 
                         return 4 * a; 
                         } 
                         a =" represents the length of one side of the rectangle." 
                         let sideLength = 5;
                         console.log(texta(5));
-                </script>
+                </pre>
                 <hr>
                 <p class="question">
                     Que.12 WAP to convert years into days and days into years? 
                 </p>
-                  <script>
-                    
+                <pre>
                     const daysInAYear = 365;
 
-                function yearsToDays(years) {
-                        
-                    return years * daysInAYear;
-
-                }
-
-
-                function daysToYears(days) {
-
-                    return days / daysInAYear;
-                }
-
-            const choice = prompt("Enter 1 to convert years to days or 2 to convert days to years:");
-
-
-                if (choice === '1') {
-
-                    const years = parseFloat(prompt("Enter the number of years:"));
-
-                     console.log(`${years} years is equal to ${yearsToDays(years)} days.`);
-                } 
-
-                else if (choice === '2') {
-
-                    const days = parseFloat(prompt("Enter the number of days:"));
-
-                    console.log(`${days} days is equal to ${daysToYears(days).toFixed(2)} years.`);
-                } 
-                else {
-                    console.log("Invalid choice. Please enter 1 or 2.");
-                }
-
-                  </script>
+                    function yearsToDays(years) {
+                            
+                        return years * daysInAYear;
+    
+                    }
+    
+    
+                    function daysToYears(days) {
+    
+                        return days / daysInAYear;
+                    }
+    
+                const choice = prompt("Enter 1 to convert years to days or 2 to convert days to years:");
+    
+    
+                    if (choice === '1') {
+    
+                        const years = parseFloat(prompt("Enter the number of years:"));
+    
+                         console.log(`${years} years is equal to ${yearsToDays(years)} days.`);
+                    } 
+    
+                    else if (choice === '2') {
+    
+                        const days = parseFloat(prompt("Enter the number of days:"));
+    
+                        console.log(`${days} days is equal to ${daysToYears(days).toFixed(2)} years.`);
+                    } 
+                    else {
+                        console.log("Invalid choice. Please enter 1 or 2.");
+                    }
+                </pre><hr>
                 <p class="question">
                     que.13 Convert temperature Fahrenheit to Celsius? (Conditional logic Question)
                 </p>
@@ -230,27 +226,25 @@
                 <ul>
                     <li>Result is : true ;</li>
                 </ul>
-                <script>
+                <pre>
                     console.log((5 > 3 && 2 < 4));
-                </script><hr>
+                </pre><hr>
                 <p class="question">
                     que.16 What is the result of the expression (true && 1 && "hello")?
                 </p>
                 <ul>
                     <li>Result is : hello;</li>
-                </ul>
-                <script>
+                </ul> 
+                <pre>
                     console.log((true && 1 && "hello"))
-                </script><hr>
+                </pre><hr>
                 <p class="question">
                     que.17 What is the result of the expression true && false || false && true?
                 </p>
                 <ul>
                     <li>Result is : False;</li>
                 </ul>
-                <script>
-                     console.log((true && false || false && true))
-                </script><hr>
+                <pre>console.log((true && false || false && true))</pre><hr>
                <p class="question">
                  que.18 What is a Loop and Switch Case in JavaScript define that ?
                </p>
@@ -288,78 +282,76 @@
             <p class="question">
                 que.22 Check Number Is Positive or Negative in JavaScript? 
             </p>
-            <script>
+            <pre>
                 let number = 1; 
-                    if (number > 0) { 
-    
-                    console.log("This is a positive value") 
-    
-                    } 
-                    else if (number == 0) { 
-    
-                    console.log("this is a zero") 
-    
-                    } 
-                    else if (number < 0) { 
-    
-                        console.log("this is a negative value") 
-    
-                    }
-            </script><hr>
+                if (number > 0) { 
+
+                console.log("This is a positive value") 
+
+                } 
+                else if (number == 0) { 
+
+                console.log("this is a zero") 
+
+                } 
+                else if (number < 0) { 
+
+                    console.log("this is a negative value") 
+
+                } 
+            </pre><hr>
             <p class="question">
                 que.23 Find the Character Is Vowel or Not ? 
             </p>
-            <script>
+            <pre>
                 let checkVowel = (ch) => { 
-                                let char = ch.toLowerCase(); 
-                                let check = ["a", "e", "i", "o", "u"] 
-                                if (check.includes(char)) { 
-                                console.log("This is a vowel") 
-                                } else { 
-                                console.log("this is a not vowel") 
-                                } 
-                                } 
-                            // checkVowel("E"); 
-                             checkVowel("d");
-            </script><hr>
+                    let char = ch.toLowerCase(); 
+                    let check = ["a", "e", "i", "o", "u"] 
+                    if (check.includes(char)) { 
+                    console.log("This is a vowel") 
+                    } else { 
+                    console.log("this is a not vowel") 
+                    } 
+                    } 
+                // checkVowel("E"); 
+                 checkVowel("d");
+            </pre><hr>
             <p class="question">
                 que.24 Write to check whether a number is negative, positive or zero? 
             </p>
-            <script>
-            function checkNumber(number) {
-                if (number > 0) {
-                    return "The number is positive.";
-                } 
-                 else if (number < 0) {
-                    return "The number is negative.";
-                } 
-                else {
-                    return "The number is zero.";
+            <pre>
+                function checkNumber(number) {
+                    if (number > 0) {
+                        return "The number is positive.";
+                    } 
+                     else if (number < 0) {
+                        return "The number is negative.";
+                    } 
+                    else {
+                        return "The number is zero.";
+                    }
                 }
-            }
-
-            // Example usage
-
-                const num = -5; // Change this to test with different numbers
-                const result = checkNumber(number);
-                console.log(result);
-
-            </script>
+    
+                // Example usage
+    
+                    const num = -5; // Change this to test with different numbers
+                    const result = checkNumber(number);
+                    console.log(result);
+            </pre><hr>
             <p class="question">
                 que.25 Write to find number is even or odd using ternary operator in JS? 
             </p>
-            <script>
-                 let CheckNumber =(num)=>{ 
-                                let oddEven = num%2==0?"this is even number":"this is a odd number" 
-                                console.log(oddEven) 
-                                } 
-                                // CheckNumber(5); 
-                                CheckNumber(2);
-            </script><hr>
+            <pre>
+                let CheckNumber =(num)=>{ 
+                    let oddEven = num%2==0?"this is even number":"this is a odd number" 
+                    console.log(oddEven) 
+                    } 
+                    // CheckNumber(5); 
+                    CheckNumber(2);
+            </pre><hr>
             <p class="question">que.26 Write find maximum number among 3 numbers using ternary operator in JS?
             </p>
-            
-            <script>
+            <pre>
                 let maximumCheck=()=>{ 
                     let a = 20; 
                     let b = 80; 
@@ -367,21 +359,316 @@
                     let check = a>b&&a>c?a:b>c?b:c; 
                     return check; 
                     }
-                    console.log(maximumCheck())
-            </script><hr>
+                    console.log(maximumCheck());
+            </pre> <hr>
             <p class="question">que.27 Write find minimum number among 3 numbers using ternary operator in JS?</p>
-                        <script>
-                            let minimumCheck = () => { 
-                                let a = 10; 
-                                let b = 5; 
-                                let c = 20; 
-                                let check = a<b&&a<c?a:b<c?b:c; 
-                                    return check; 
-                                    } 
-                                    console.log(minimumCheck()) 
-                        </script>
+            <pre>
+                let minimumCheck=()=>{ 
+                    let a = 10; 
+                    let b = 5; 
+                    let c = 20; 
+                    <!-- let check = a<b&&a<c?a:b<c?b:c;  -->
+                        return check; 
+                        } 
+                        console.log(minimumCheck()) ;
+            </pre><hr>
+           <p class="question">que.30 What are the looping structures in JavaScript? Any one Example?</p>
+                
+                <ul>
+                    <li>for loop: Executes a block of code a specified number of times.</li>
+                    <li>while loop: Executes a block of code as long as a specified condition is true.</li>
+                    <li>do...while loop: Similar to the while loop, but it always executes the block of code once before checking the condition.</li>
+                </ul>
+            <pre>     
+                for (let i = 0; i < 5; i++) {
+                    console.log(i);
+                }
+            </pre><hr>
+            <p class="question">que.31 Write a print 972 to 897 using for loop in JS ?</p>
+            <pre>
+                for (let i = 972; i >= 897; i--) {
+                    console.log(i);
+                }
+            </pre><hr>
+            <p class="question">que.32 Write to print factorial of given number ?</p>
+            <pre>
+                let h = 5;
+                    let ans = 1;
+                        for (let i = 1; i <= h; i++) {
+                        ans = ans * i;
+                        console.log(ans); 
+                }
+            </pre><hr>
+            <p class="question">que.33 Write to print Fibonacci series up to given numbers ?</p>
+            <pre>
+                let d = 0;
+                    let t = 1;
+
+                    for (let i = 1; i <= 5; i++) {
+                        let c = d + t;
+
+                        console.log(c);
+                        d = t;
+                        t = c;
+                    }
+            </pre><hr>
+            <p class="question">que.34 Write to print number in reverse order e.g.: number = 64728 --- > reverse =82746 in JS?</p>
+            <pre>
+                let num1 = 12345;
+                let reverse = String(num1).split('').reverse().join('');
+
+                    console.log(reverse);
+            </pre><hr>
+            <p class="question">que.35 Write a program make a summation of given number(E.g., 1523 Ans:11) in JS ?</p>
+            <pre>
+                let num2 = 12345;
+                    let result1 = 0;
+                    let sum = num2.toString();
+
+                    for (i = 0; i < sum.length; i++) {
+
+                        result1 = result1 + parseInt(sum[i]);
+                    }
+
+                    console.log(result1);
+
+            </pre><hr>
+            <p class="question">que.36 Write a program you have to make a summation of first and last Digit. (E.g., 1234 Ans: -5) in JS ?</p>
+            <pre>
+                let num3 = 12349;
+                    let out = num3.toString();
+
+                     let result2 = parseInt(out[0]) + parseInt(out[out.length - 1]);
+                        console.log(result2);
+            </pre><hr>
+            <p class="question">que.37 Use console.log() and escape characters to print the following pattern in JS ?</p>
+            <pre>
+                for (let i = 1; i <= 5; i++) {
+
+                    console.log(i + '1' + i + i * i + i * i * i);
+
+                }
+            </pre><hr>
+            <p class="question">que.38 Use pattern in console.log in JS ?</p>
+            <pre>
+                // p.1
+                for (let i = 1; i <= 5; i++) {
+                    document.write(1);
+                for (let j = 1; j < i; j++) {
+                    document.write(0);
+                }
+                    document.write('<br>')
+                }
+            // p.2
+                for (let i = 1; i <= 5; i++) {
+
+                for (let j = 1; j <= i; j++) {
+
+                    document.write(j % 2 === 0 ? '0 ' : '1 ');
+                }
+                    document.write('<br>');
+                }
+            // p.3
+                // for (let i = 1; i <= 5; i++) {
+
+                //     document.write('A')
+                // for (let j = 1; j < i; j++) {
+                //     document.write('A')
+                // }
+                // document.write('<br>')
+                // }
+            // p.4
+                for (let i = 1; i <= 5; i++) {
+
+                    document.write('*')
+                for (let j = 1; j < i; j++) {
+                    document.write('*')
+                }
+                    document.write('<br>')
+                }
+            </pre><hr>
+            <p class="question">que.39 Accept 3 numbers from user using while loop and check each numbers palindrome? </p> <hr>    
+            <p class="question">que.40 Write a JavaScript Program to display the current day and time in the following format.
+                Sample Output: Today is Friday. Current Time is 12 PM: 12 : 22 2 ?</p>
+                <pre>
+                    let dd = new Date();
+                    let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                    let day = dd.getDay();
+                    let time = dd.getHours();
+  
+                      console.log(`Today is ${days[day]}. Current time is ${time > 12 ? time - 12 : time} ${time >= 12 ? 'PM' : 'AM'}`);
+                </pre><hr>
+            <p class="question">que.41 Write a JavaScript program to get the current date? </p>
+            <pre>
+                let date_2 = new Date().toDateString();
+                console.log(date_2);
+            </pre><hr>
+            <p class="question">que.42 Write a JavaScript program to compare two objects? </p>
+            <pre>
+                // Example of different reference 
+                const obj1 = { a: 1, b: 2 };
+                const obj2 = { a: 1, b: 2 };
+                console.log(obj1 === obj2);
+    
+                // Example of same reference 
+                const obj3 = { a: 1, b: 2 };
+                const obj4 = obj3;
+                console.log(obj3 === obj4); 
+            </pre> <hr>
+       <p class="question">que.43 Write a JavaScript program to convert an array of objects into CSV string?</p>
+        <pre>
+            let array = ["Tanvi", '22', 'React js'];
+            let csv = array.join();
+            console.log(csv);
+        </pre><hr>
            
+        <p class="question">que.44 Write a JavaScript program to capitalize first letter of a string?</p>
+        <pre>
+            function capitalize() {
+                let string = "goodmorning";
+                console.log(string[0].toUpperCase() + string.slice(1));
+            }
+            capitalize();
+        </pre><hr>
+        <p class="question">que.45 Write a JavaScript program to determine if a variable is array?
+        </p>
+            <pre>
+            const arr = [9,12,18,21,27];
+
+                const notArr = '9,12,18,21,27';
+
+
+                console.log(Array.isArray(arr));
+                console.log(Array.isArray(notArr));
+            </pre><hr>
+            <p class="question">que.46 Write a JavaScript program to clone an array? </p>
+            <pre>
+                const arr = [9,12,18,19,21,27];
          
+                const clone = [...arr];
+            </pre><hr>
+            <p class="question">que.47 What is the drawback of declaring methods directly in JavaScript objects?</p>
+            <ul>
+                <li>we ca not deep clone normally.</li>
+            </ul><hr>
+            <p class="question">que.48 Print the length of the string on the browser console using console.log()? </p>
+            <pre>
+                let str = 'Hello World!';
+        
+                console.log(str.length);
+            </pre><hr>
+            <p class="question">que.49  Change all the string characters to capital letters using toUpperCase() method? </p>
+            <pre>
+                let str = 'Hello World!';
+        
+                console.log(str.toUpperCase());
+              </pre><hr>
+            <p class="question">que.50 What is the drawback of declaring methods directly in JavaScript objects? </p>
+            <ul>
+                <li><b>Repeted Question From QNo 47</b></li>
+            </ul><hr>  
+            <p class="question">que.51 Write a JavaScript program to get the current date. Expected Output : mm-dd-yyyy,
+                mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy? </p> 
+                <pre>
+                    const date = new Date();
+            
+            
+                    console.log('MM/DD/YYYY');
+                    console.log(${('0' + (date.getMonth()+1)).slice(-2)} - ${('0' + (date.getDate())).slice(-2)} - ${date.getFullYear()});
+            
+            
+                    console.log('\n\nDD/MM/YYYY');
+                    console.log(${('0' + (date.getDate())).slice(-2)} - ${('0' + (date.getMonth()+1)).slice(-2)} - ${date.getFullYear()});
+                </pre><hr>
+            <p class="question">que.52 Use indexOf to determine the position of the first occurrence of a in 30 Days Of
+                JavaScript?</p>
+                <pre>
+                    let str = '30 Days Of JavaScript';
+            
+                    console.log(str.indexOf('Of'));
+                </pre>
+            <p class="question">que.53 Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of
+                JavaScript?</p>
+                <pre>
+                    let str = '30 Days Of JavaScript';
+            
+                    console.log(str.lastIndexOf('Of'));
+                </pre>
+            <p class="question">que.54  Form Validtion in JS?</p>
+            <ul>
+                <li>form validation is used to validate the entry or the input or data that is entered by user.</li>
+            </ul><hr>
+            <p class="question">que.55 Form in Email, number, Password, Validation?</p>
+            <ul>
+                <li>this requies specific patter.</li>
+            </ul><hr>
+            <p class="question">que.56 Dynamic Form Validation in JS? </p>
+            <ul>
+                <li>we have too use event for dynamica form validation.</li>
+            </ul><hr>
+            <p class="question">que.57 how many type of JS Event? How to use it ? </p>
+            <ul>
+                <li>Mouse Events</li>
+                <li>Keyboard Events</li>
+                <li>Keyboard Events</li>
+            </ul><hr>
+            <p class="question">que.58 What is Bom vs Dom in JS? </p>
+            <ul>
+                <li> <b>BOM </b>Means Browser Object Model Which Is Provided By Browser That Has Global Window Object And Some Functionality That Can Be Only Used In Browser Like setTimeout SetInterval , fetch Etc.
+                </li>
+                <li><b>DOM </b>Is Actully Part Of Global Object It Stnads For Document Object Model It Is A Tree Like Represtation Of Our Whole Document Including HTML , CSS and JS Each And Every Thing In DOM Is Considered As An Object. 
+                </li>
+            </ul><hr>
+            <p class="question">que.59 Array vs object defences in JS?</p>
+            <ul>
+                <li>array is collection of different datatypes which is stored as an ordered index usually it starts from 0.</li>
+                <li> On the other hand object is collection of key and value pair combination data.</li>
+            </ul><hr>
+            <p class="question">que.60 Split the string into an array using split() Method?</p>
+            <pre>
+                let str = '9 12 21';
+        
+                const arr = str.split(' ');
+            </pre><hr>
+            <p class="question">que.61 Check if the string contains a word Script using includes() method?</p>
+            <pre>
+                let str = 'Java Script And Java Are Not Related';
+        
+                console.log(str.includes('Script'));
+            </pre><hr>
+            <p class="question">que.62 Change all the string characters to lowercase letters using toLowerCase() Method.</p>
+            <pre>
+                let str = 'HELLO';
+        
+                console.log(str.toLowerCase());
+              </pre>
+            <p class="question">que.63 What is Character at index 15 in ’30 Days of JavaScript’ string? Use charAt() method.</p>
+            <pre>
+                let str = '30 Days of JavaScript';
+                
+                console.log(str.charAt(15););
+              </pre>
+            <p class="question">que.64 copy to one string to another string in JS?</p>
+            <pre>
+                let str = 'Hello';
+        
+                let copyOfStr = str;
+            </pre>
+            <p class="question">que.65 Find the length of a string without using libraryFunction?</p>
+            <pre>
+                let str = 'Hello World!';
+        
+                let index = 0;
+        
+                while (true) {
+        
+                       if (str[index] === undefined) {
+                            console.log(index);
+                            break;
+                      } 
+                index++;
+                }
+              </pre>      
         </section>
     </main>
 </body>
