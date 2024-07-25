@@ -1,0 +1,29 @@
+• What is React Js?
+->React is an open-source JavaScript library developed by Facebook,
+->React allows developers to create reusable UI components. 
+
+• What is NPM in React Js?
+->NPM stands for node package manager
+->npm is also a software Package Manager and Installer
+->npm is free to use.
+
+• What is Role of Node Js in react Js?
+->create server-side web applications,
+
+• What is CLI command In React Js?
+->React has its own command-line interface (CLI) commands.
+
+• What is Components in React Js?
+->Components are block of code(piece of code). which we can reuse.
+->It is Combination of HTML, CSS, javascript.
+->Using of Components we can build UI easily.
+->React is all about Componenets, single resposibility
+
+Types of Components :
+1) Function Components : Simple javascript Function (rfc)
+2) Class Components : ES6 classes to create class Components.(rcc) class Components little more complex than Function Components.
+
+• What is Header and Content Components in React Js?
+->
+• How to install React Js on Windows, Linux Operating System? How to Install
+NPM and How to check version of NPM?
