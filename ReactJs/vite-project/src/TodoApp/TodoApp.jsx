@@ -20,6 +20,7 @@ export default function TodoList() {
     updatedGrocery.splice(index, 1);
     // delete updatedGrocery[index]
     console.log(updatedGrocery);
+    // console.log(index);
     setGrocery(updatedGrocery);
     // console.log(updatedGrocery);
 
@@ -54,8 +55,8 @@ export default function TodoList() {
       {grocery.map((item,index)=>{
         return <div key={index} style={{display:"flex",justifyContent:"space-around",alignItems:"center",width:"80%",margin:"0 auto"}}><span style={{fontSize:"25px"}}>{index+1}</span>
           <span key={index} style={{display:"inline-block",backgroundColor:"black",width:"200px",border:"1px solid black",fontSize:"25px",overflow:"hidden"}}>{item}</span>
-          <button onClick={()=>handelDel(index)}><i className="fa-solid fa-trash"></i>Delete</button>
-          <button onClick={()=>handelEdit(index)}><i className="fa-solid fa-pen-to-square">Edit</i></button><br/><br />
+          <button onClick={()=>handelDel(index)} ><i className="fa-solid fa-trash"></i></button>
+          <button onClick={()=>handelEdit(index)} ><i className="fa-solid fa-pen-to-square"></i></button><br/><br />
            
           
           </div>

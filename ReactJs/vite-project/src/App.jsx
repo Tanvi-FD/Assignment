@@ -1,7 +1,9 @@
 import { useState } from 'react'
-import HelloWorld from './helloWorld/HelloWorld'
+import HelloWorld from './HelloWorld/HelloWorld'
 import CounterApp from './CounterApp/CounterApp'
 import TodoApp from './TodoApp/TodoApp'
+import MapList from './MapList/MapList'
+
 // import './App.css'
 
 function App() {
@@ -14,8 +16,14 @@ function App() {
     <br/>
 
     <CounterApp/>
+
     <br/>
+
     <TodoApp/>
+
+    <br/>
+
+    <MapList/>
     </>
   )
 }
