@@ -1,0 +1,22 @@
+
+html,
+body{
+  height: 100%;
+}
+.container{
+  background-color: #fff !important;
+  box-shadow: rgba(149, 157, 168, 0.2)0px 8px 24px !important;
+  padding: 3rem;
+}
+.from-signin{
+  max-width: 330px;
+  padding: 1rem;
+}
+.from-signin .from-floating:focus-within{
+  z-index: 2;
+}
+.from-signin input[type="email"]{
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
